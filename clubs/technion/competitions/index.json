@@ -38,5 +38,21 @@
     "display_date": "18/08/2026",
     "folder": "2026-08-18-BM-2026-e70359fb",
     "source": "BridgeMaster"
+  },
+  {
+    "id": "BM-2026-afda49f6",
+    "title": "בוקר ברידג'",
+    "date": "2026-08-19",
+    "display_date": "19/08/2026",
+    "folder": "2026-08-19-BM-2026-afda49f6",
+    "source": "BridgeMaster"
+  },
+  {
+    "id": "BM-2026-22f2f664",
+    "title": "בוקר ברידג'",
+    "date": "2026-08-25",
+    "display_date": "25/08/2026",
+    "folder": "2026-08-25-BM-2026-22f2f664",
+    "source": "BridgeMaster"
   }
 ]

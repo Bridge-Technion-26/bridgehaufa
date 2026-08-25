@@ -34,5 +34,13 @@
     "date": "2026-08-16",
     "display_date": "16/08/2026",
     "folder": "2026-08-16"
+  },
+  {
+    "id": "BM-2026-f8e4b620",
+    "title": "בוקר ברידג'",
+    "date": "2026-08-23",
+    "display_date": "23/08/2026",
+    "folder": "2026-08-23-BM-2026-f8e4b620",
+    "source": "BridgeMaster"
   }
 ]
