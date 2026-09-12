@@ -64,14 +64,6 @@
     "source": "BridgeMaster"
   },
   {
-    "id": "BM-2026-11528727",
-    "title": "בוקר ברידג'",
-    "date": "2026-09-01",
-    "display_date": "01/09/2026",
-    "folder": "2026-09-01-BM-2026-11528727",
-    "source": "BridgeMaster"
-  },
-  {
     "id": "BM-2026-09cfabdf",
     "title": "יום ד",
     "date": "2026-09-02",
@@ -85,6 +77,14 @@
     "date": "2026-09-08",
     "display_date": "08/09/2026",
     "folder": "2026-09-08-BM-2026-6196a85b",
+    "source": "BridgeMaster"
+  },
+  {
+    "id": "BM-2026-11528727",
+    "title": "בוקר ברידג'",
+    "date": "2026-09-01",
+    "display_date": "01/09/2026",
+    "folder": "2026-09-01-BM-2026-11528727",
     "source": "BridgeMaster"
   }
 ]
