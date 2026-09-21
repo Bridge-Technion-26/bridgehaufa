@@ -1,0 +1,12 @@
+{
+  "name": "מועדון טכניון",
+  "short_name": "טכניון ברידג'",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1f4e78",
+  "icons": [{"src": "assets/technion-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

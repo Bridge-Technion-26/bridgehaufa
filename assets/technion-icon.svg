@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="96" fill="#1f4e78"/>
+<path d="M84 178 256 90l172 88-172 88z" fill="#fff"/>
+<path d="M144 213v115c0 44 224 44 224 0V213l-112 57z" fill="#dbeaf6"/>
+<text x="256" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="bold" fill="#fff">♠</text>
+</svg>
