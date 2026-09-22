@@ -1,0 +1,2270 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>BridgeMaster – תוצאות אישיות</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f4f7fa; margin: 20px; direction: rtl; }
+.page { display: none; max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+.page.active { display: block; }
+h1, h2, h3, .meta { text-align: center; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 22px; }
+th { background: #1f4e78; color: white; padding: 8px; border: 1px solid #888; }
+td { padding: 7px; border: 1px solid #aaa; text-align: center; }
+.gap { border: none; background: white; width: 14px; }
+.link { border: none; background: none; color: #0645ad; text-decoration: underline; cursor: pointer; font: inherit; }
+.opponent { max-width: 560px; margin: 18px auto; }
+.hands { display: grid; grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas: ". north ." "west . east" ". south .";
+          gap: 18px; max-width: 760px; margin: 30px auto; }
+.north { grid-area: north; } .west { grid-area: west; }
+.east { grid-area: east; } .south { grid-area: south; }
+.hands > div { border: 1px solid #aaa; border-radius: 8px; padding: 12px; background: #fafafa; }
+button { padding: 7px 12px; }
+</style>
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(function(page) {
+    page.classList.remove('active');
+  });
+  var target = document.getElementById(id);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo(0, 0);
+    location.hash = id;
+  }
+}
+window.addEventListener('load', function() {
+  showPage(location.hash.substring(1) || 'ranking');
+});
+window.addEventListener('hashchange', function() {
+  showPage(location.hash.substring(1) || 'ranking');
+});
+</script>
+</head>
+<body>
+<div class="page active" id="ranking">
+  <h1>טכניון — בוקר ברידג&#x27; — 2026-09-22</h1>
+  <h2>לחץ על שם הזוג להצגת המשחקים שלו</h2>
+  <p style="text-align:center;color:#64748b">מפגשים מול חצי שולחן אינם מוצגים בדף האישי.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>מקום NS</th><th>זוג</th><th>שמות</th><th>%</th>
+        <th class="gap"></th>
+        <th>מקום EW</th><th>זוג</th><th>שמות</th><th>%</th>
+      </tr>
+    </thead>
+    <tbody><tr><td>1</td><td>11</td><td><button class="link" onclick="showPage('pair-NS-11')">שרה מוריה</button></td><td>61.64%</td><td class='gap'></td><td>1</td><td>4</td><td><button class="link" onclick="showPage('pair-EW-4')">זלו</button></td><td>59.88%</td></tr><tr><td>2</td><td>2</td><td><button class="link" onclick="showPage('pair-NS-2')">אלכס אמנון</button></td><td>57.88%</td><td class='gap'></td><td>2</td><td>7</td><td><button class="link" onclick="showPage('pair-EW-7')">טניה ראיסה</button></td><td>56.48%</td></tr><tr><td>3</td><td>9</td><td><button class="link" onclick="showPage('pair-NS-9')">מיכאל סטלה</button></td><td>49.32%</td><td class='gap'></td><td>3</td><td>5</td><td><button class="link" onclick="showPage('pair-EW-5')">בטי ברכה</button></td><td>55.86%</td></tr><tr><td>4</td><td>1</td><td><button class="link" onclick="showPage('pair-NS-1')">שמואל מירה</button></td><td>48.97%</td><td class='gap'></td><td>4</td><td>10</td><td><button class="link" onclick="showPage('pair-EW-10')">שוש ניצה</button></td><td>54.32%</td></tr><tr><td>4</td><td>3</td><td><button class="link" onclick="showPage('pair-NS-3')">אילנה גילה</button></td><td>48.97%</td><td class='gap'></td><td>5</td><td>9</td><td><button class="link" onclick="showPage('pair-EW-9')">פבל אלה</button></td><td>54.01%</td></tr><tr><td>6</td><td>5</td><td><button class="link" onclick="showPage('pair-NS-5')">יונתן אילנה</button></td><td>48.63%</td><td class='gap'></td><td>6</td><td>3</td><td><button class="link" onclick="showPage('pair-EW-3')">אירנה חנה</button></td><td>49.69%</td></tr><tr><td>7</td><td>10</td><td><button class="link" onclick="showPage('pair-NS-10')">זיצה זהבה</button></td><td>48.44%</td><td class='gap'></td><td>7</td><td>8</td><td><button class="link" onclick="showPage('pair-EW-8')">ברברה יהודית</button></td><td>45.99%</td></tr><tr><td>8</td><td>6</td><td><button class="link" onclick="showPage('pair-NS-6')">אסתר בתיה</button></td><td>47.95%</td><td class='gap'></td><td>8</td><td>2</td><td><button class="link" onclick="showPage('pair-EW-2')">הניה נילי</button></td><td>43.21%</td></tr><tr><td>9</td><td>7</td><td><button class="link" onclick="showPage('pair-NS-7')">שלומית אבינועם</button></td><td>46.58%</td><td class='gap'></td><td>9</td><td>1</td><td><button class="link" onclick="showPage('pair-EW-1')">שוש יהודית</button></td><td>42.28%</td></tr><tr><td>10</td><td>4</td><td><button class="link" onclick="showPage('pair-NS-4')">מיקי טובה</button></td><td>45.89%</td><td class='gap'></td><td>10</td><td>6</td><td><button class="link" onclick="showPage('pair-EW-6')">רינה שרה</button></td><td>38.27%</td></tr><tr><td>10</td><td>8</td><td><button class="link" onclick="showPage('pair-NS-8')">יפה מירב</button></td><td>45.89%</td><td class='gap'></td><td></td><td></td><td></td><td></td></tr></tbody>
+  </table>
+</div>
+
+            <div class="page" id="pair-NS-1">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>שמואל מירה – זוג 1 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>90</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-490</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-2">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>אלכס אמנון – זוג 2 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>120</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>90</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-400</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-3">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>אילנה גילה – זוג 3 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>600</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>470</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>90</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-4">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>מיקי טובה – זוג 4 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-450</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-140</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-300</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-5">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>יונתן אילנה – זוג 5 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>-200</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-120</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-230</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-800</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-170</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-6">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>אסתר בתיה – זוג 6 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>90</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>420</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>80</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-490</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-7">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>שלומית אבינועם – זוג 7 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>430</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-420</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>0</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-8">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>יפה מירב – זוג 8 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-430</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>180</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-9">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>מיכאל סטלה – זוג 9 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-140</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-300</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-10">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>זיצה זהבה – זוג 10 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>420</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>140</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-170</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שוש יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-150</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-800</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-NS-11">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>שרה מוריה – זוג 11 NS</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – שוש ניצה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>420</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – פבל אלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – ברברה יהודית</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – טניה ראיסה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – רינה שרה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – בטי ברכה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – זלו</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>650</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אירנה חנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-400</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – הניה נילי</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-1">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>שוש יהודית – זוג 1 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>430</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>120</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-450</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-150</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-2">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>הניה נילי – זוג 2 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-230</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-3">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>אירנה חנה – זוג 3 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-120</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-400</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-420</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>0</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-4">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>זלו – זוג 4 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>-170</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>650</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-490</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-400</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-5">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>בטי ברכה – זוג 5 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>-110</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-490</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>50</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-6">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>רינה שרה – זוג 6 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>140</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>80</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>500</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>150</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>180</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-7">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>טניה ראיסה – זוג 7 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>-200</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>90</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>150</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>90</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-50</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-650</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-300</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-8">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>ברברה יהודית – זוג 8 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>420</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>420</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>620</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-430</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>90</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-130</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-300</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-9">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>פבל אלה – זוג 9 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>-200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>-110</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>90</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-650</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>200</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>300</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>-100</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-15')">15</button></td><td>-460</td></tr><tr><td><button class="link" onclick="showPage('board-16')">16</button></td><td>470</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 9 – מיכאל סטלה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-140</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-1430</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>600</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-800</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+            <div class="page" id="pair-EW-10">
+              <button onclick="showPage('ranking')">חזרה לדירוג</button>
+              <h1>שוש ניצה – זוג 10 EW</h1>
+              
+                    <section class="opponent">
+                      <h3>נגד זוג 11 – שרה מוריה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-1')">1</button></td><td>420</td></tr><tr><td><button class="link" onclick="showPage('board-2')">2</button></td><td>630</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 6 – אסתר בתיה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-3')">3</button></td><td>460</td></tr><tr><td><button class="link" onclick="showPage('board-4')">4</button></td><td>400</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 1 – שמואל מירה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-5')">5</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-6')">6</button></td><td>-620</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 7 – שלומית אבינועם</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-7')">7</button></td><td>100</td></tr><tr><td><button class="link" onclick="showPage('board-8')">8</button></td><td>-50</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 2 – אלכס אמנון</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-9')">9</button></td><td>-710</td></tr><tr><td><button class="link" onclick="showPage('board-10')">10</button></td><td>200</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 8 – יפה מירב</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-11')">11</button></td><td>110</td></tr><tr><td><button class="link" onclick="showPage('board-12')">12</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 3 – אילנה גילה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-13')">13</button></td><td>600</td></tr><tr><td><button class="link" onclick="showPage('board-14')">14</button></td><td>-140</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 4 – מיקי טובה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-17')">17</button></td><td>-140</td></tr><tr><td><button class="link" onclick="showPage('board-18')">18</button></td><td>-460</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 10 – זיצה זהבה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-19')">19</button></td><td>-680</td></tr><tr><td><button class="link" onclick="showPage('board-20')">20</button></td><td>-100</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+                    <section class="opponent">
+                      <h3>נגד זוג 5 – יונתן אילנה</h3>
+                      <table>
+                        <thead><tr><th>בורד</th><th>תוצאה</th></tr></thead>
+                        <tbody><tr><td><button class="link" onclick="showPage('board-21')">21</button></td><td>-800</td></tr><tr><td><button class="link" onclick="showPage('board-22')">22</button></td><td>-170</td></tr></tbody>
+                      </table>
+                    </section>
+                    
+            </div>
+            
+
+                <div class="page" id="board-1">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 1</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> J82</div><div><b>♥</b> A986</div><div><b>♦</b> K82</div><div><b>♣</b> KT8</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 75</div><div><b>♥</b> JT532</div><div><b>♦</b> AQ6</div><div><b>♣</b> 653</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> KQT963</div><div><b>♥</b> —</div><div><b>♦</b> 95</div><div><b>♣</b> QJ974</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> A4</div><div><b>♥</b> KQ74</div><div><b>♦</b> JT743</div><div><b>♣</b> A2</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-2">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 2</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> A</div><div><b>♥</b> QT</div><div><b>♦</b> AKT4</div><div><b>♣</b> AKQ942</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> K43</div><div><b>♥</b> A62</div><div><b>♦</b> J97</div><div><b>♣</b> J753</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QJ92</div><div><b>♥</b> K54</div><div><b>♦</b> Q865</div><div><b>♣</b> T8</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> T8765</div><div><b>♥</b> J9873</div><div><b>♦</b> 32</div><div><b>♣</b> 6</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-3">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 3</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AQ6</div><div><b>♥</b> 94</div><div><b>♦</b> AKT5</div><div><b>♣</b> J965</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> J54</div><div><b>♥</b> J82</div><div><b>♦</b> J62</div><div><b>♣</b> A872</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> 9873</div><div><b>♥</b> T765</div><div><b>♦</b> 873</div><div><b>♣</b> K3</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> KT2</div><div><b>♥</b> AKQ3</div><div><b>♦</b> Q94</div><div><b>♣</b> QT4</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-4">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 4</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 3</div><div><b>♥</b> QT874</div><div><b>♦</b> 9</div><div><b>♣</b> KT8543</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> A5</div><div><b>♥</b> KJ2</div><div><b>♦</b> AT8543</div><div><b>♣</b> Q2</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QT742</div><div><b>♥</b> 965</div><div><b>♦</b> KQJ</div><div><b>♣</b> A9</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> KJ986</div><div><b>♥</b> A3</div><div><b>♦</b> 762</div><div><b>♣</b> J76</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-5">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 5</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> A943</div><div><b>♥</b> KQ</div><div><b>♦</b> A876</div><div><b>♣</b> K43</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> KJ</div><div><b>♥</b> J65</div><div><b>♦</b> KQT5</div><div><b>♣</b> QT52</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> 7652</div><div><b>♥</b> A83</div><div><b>♦</b> J3</div><div><b>♣</b> J987</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> QT8</div><div><b>♥</b> T9742</div><div><b>♦</b> 942</div><div><b>♣</b> A6</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-6">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 6</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 98</div><div><b>♥</b> 62</div><div><b>♦</b> KJ854</div><div><b>♣</b> J852</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> AKT73</div><div><b>♥</b> KJT74</div><div><b>♦</b> 7</div><div><b>♣</b> 73</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QJ542</div><div><b>♥</b> 53</div><div><b>♦</b> AQ</div><div><b>♣</b> KQT6</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> 6</div><div><b>♥</b> AQ98</div><div><b>♦</b> T9632</div><div><b>♣</b> A94</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-7">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 7</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 986</div><div><b>♥</b> 4</div><div><b>♦</b> AKT95</div><div><b>♣</b> QJ85</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 54</div><div><b>♥</b> AQJ87</div><div><b>♦</b> Q82</div><div><b>♣</b> A76</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QJ73</div><div><b>♥</b> T963</div><div><b>♦</b> J64</div><div><b>♣</b> K3</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> AKT2</div><div><b>♥</b> K52</div><div><b>♦</b> 73</div><div><b>♣</b> T942</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-8">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 8</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> T97</div><div><b>♥</b> 653</div><div><b>♦</b> QJ873</div><div><b>♣</b> KJ</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> QJ653</div><div><b>♥</b> T</div><div><b>♦</b> KT4</div><div><b>♣</b> T972</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> K42</div><div><b>♥</b> QJ7</div><div><b>♦</b> 52</div><div><b>♣</b> A8543</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> A8</div><div><b>♥</b> AK9842</div><div><b>♦</b> A96</div><div><b>♣</b> Q6</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-9">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 9</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> Q4</div><div><b>♥</b> KJ97</div><div><b>♦</b> KQ73</div><div><b>♣</b> KT5</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 76</div><div><b>♥</b> AQT652</div><div><b>♦</b> A</div><div><b>♣</b> J874</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AKT9532</div><div><b>♥</b> —</div><div><b>♦</b> JT54</div><div><b>♣</b> AQ</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> J8</div><div><b>♥</b> 843</div><div><b>♦</b> 9862</div><div><b>♣</b> 9632</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-10">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 10</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 7</div><div><b>♥</b> Q94</div><div><b>♦</b> JT84</div><div><b>♣</b> AKQ85</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> AQ9865</div><div><b>♥</b> 6</div><div><b>♦</b> 963</div><div><b>♣</b> J74</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> T4</div><div><b>♥</b> AKJ3</div><div><b>♦</b> AQ7</div><div><b>♣</b> T932</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> KJ32</div><div><b>♥</b> T8752</div><div><b>♦</b> K52</div><div><b>♣</b> 6</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-11">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 11</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AKQ</div><div><b>♥</b> A9</div><div><b>♦</b> A8</div><div><b>♣</b> Q87643</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> JT5</div><div><b>♥</b> J6</div><div><b>♦</b> KT63</div><div><b>♣</b> AT92</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> 876</div><div><b>♥</b> QT843</div><div><b>♦</b> QJ97</div><div><b>♣</b> K</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> 9432</div><div><b>♥</b> K752</div><div><b>♦</b> 542</div><div><b>♣</b> J5</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-12">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 12</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> J64</div><div><b>♥</b> 732</div><div><b>♦</b> QT84</div><div><b>♣</b> Q95</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> A75</div><div><b>♥</b> QT54</div><div><b>♦</b> K632</div><div><b>♣</b> T6</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> Q32</div><div><b>♥</b> K86</div><div><b>♦</b> J95</div><div><b>♣</b> AJ83</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> KT98</div><div><b>♥</b> AJ9</div><div><b>♦</b> A7</div><div><b>♣</b> K742</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-13">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 13</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 8</div><div><b>♥</b> AKQJT63</div><div><b>♦</b> T3</div><div><b>♣</b> QJ8</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> A652</div><div><b>♥</b> 2</div><div><b>♦</b> K9872</div><div><b>♣</b> 952</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QT</div><div><b>♥</b> 98754</div><div><b>♦</b> A5</div><div><b>♣</b> K643</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> KJ9743</div><div><b>♥</b> —</div><div><b>♦</b> QJ64</div><div><b>♣</b> AT7</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-14">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 14</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> Q93</div><div><b>♥</b> A54</div><div><b>♦</b> Q92</div><div><b>♣</b> K982</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> A2</div><div><b>♥</b> 62</div><div><b>♦</b> AT753</div><div><b>♣</b> AQJ7</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> JT8754</div><div><b>♥</b> KJ7</div><div><b>♦</b> K8</div><div><b>♣</b> 65</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> K6</div><div><b>♥</b> QT983</div><div><b>♦</b> J64</div><div><b>♣</b> T43</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-15">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 15</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> T742</div><div><b>♥</b> QT986</div><div><b>♦</b> Q5</div><div><b>♣</b> 86</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 6</div><div><b>♥</b> K54</div><div><b>♦</b> A842</div><div><b>♣</b> Q7532</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> KQ53</div><div><b>♥</b> A3</div><div><b>♦</b> KT97</div><div><b>♣</b> AK9</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> AJ98</div><div><b>♥</b> J72</div><div><b>♦</b> J63</div><div><b>♣</b> JT4</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-16">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 16</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AT952</div><div><b>♥</b> 6</div><div><b>♦</b> K3</div><div><b>♣</b> QT962</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> KJ76</div><div><b>♥</b> KJ9</div><div><b>♦</b> QJ74</div><div><b>♣</b> A3</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> 83</div><div><b>♥</b> Q8432</div><div><b>♦</b> 965</div><div><b>♣</b> KJ4</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> Q4</div><div><b>♥</b> AT75</div><div><b>♦</b> AT82</div><div><b>♣</b> 875</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-17">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 17</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AJ76</div><div><b>♥</b> K92</div><div><b>♦</b> 75</div><div><b>♣</b> AJ98</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> K952</div><div><b>♥</b> JT864</div><div><b>♦</b> AJ63</div><div><b>♣</b> —</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> 43</div><div><b>♥</b> AQ3</div><div><b>♦</b> T8</div><div><b>♣</b> KT6542</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> QT8</div><div><b>♥</b> 75</div><div><b>♦</b> KQ942</div><div><b>♣</b> Q73</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-18">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 18</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> T73</div><div><b>♥</b> KQ642</div><div><b>♦</b> 2</div><div><b>♣</b> J743</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> AQ85</div><div><b>♥</b> JT83</div><div><b>♦</b> T86</div><div><b>♣</b> K2</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> KJ2</div><div><b>♥</b> 97</div><div><b>♦</b> KQJ543</div><div><b>♣</b> A6</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> 964</div><div><b>♥</b> A5</div><div><b>♦</b> A97</div><div><b>♣</b> QT985</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-19">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 19</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 32</div><div><b>♥</b> 8</div><div><b>♦</b> QJT</div><div><b>♣</b> KJT9743</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> Q</div><div><b>♥</b> KQT954</div><div><b>♦</b> AK54</div><div><b>♣</b> A5</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AK984</div><div><b>♥</b> J7632</div><div><b>♦</b> 7</div><div><b>♣</b> Q2</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> JT765</div><div><b>♥</b> A</div><div><b>♦</b> 98632</div><div><b>♣</b> 86</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-20">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 20</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> QJ5</div><div><b>♥</b> QT9</div><div><b>♦</b> A963</div><div><b>♣</b> AT4</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 9</div><div><b>♥</b> 76542</div><div><b>♦</b> QT</div><div><b>♣</b> J9765</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AK8743</div><div><b>♥</b> 83</div><div><b>♦</b> 7542</div><div><b>♣</b> Q</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> T62</div><div><b>♥</b> AKJ</div><div><b>♦</b> KJ8</div><div><b>♣</b> K832</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-21">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 21</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> Q5</div><div><b>♥</b> KQT54</div><div><b>♦</b> KQ863</div><div><b>♣</b> 6</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 86</div><div><b>♥</b> AJ83</div><div><b>♦</b> JT</div><div><b>♣</b> KQ975</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AKT72</div><div><b>♥</b> —</div><div><b>♦</b> 72</div><div><b>♣</b> AT8432</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> J943</div><div><b>♥</b> 9762</div><div><b>♦</b> A954</div><div><b>♣</b> J</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-22">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 22</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 9</div><div><b>♥</b> A832</div><div><b>♦</b> KT7543</div><div><b>♣</b> J6</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> Q852</div><div><b>♥</b> J75</div><div><b>♦</b> AJ6</div><div><b>♣</b> QT9</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AK743</div><div><b>♥</b> KQT9</div><div><b>♦</b> 82</div><div><b>♣</b> 52</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> JT6</div><div><b>♥</b> 64</div><div><b>♦</b> Q9</div><div><b>♣</b> AK8743</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-23">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 23</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AK64</div><div><b>♥</b> Q2</div><div><b>♦</b> 54</div><div><b>♣</b> KJ984</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> J8532</div><div><b>♥</b> AJ74</div><div><b>♦</b> QJ6</div><div><b>♣</b> 3</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QT9</div><div><b>♥</b> K98</div><div><b>♦</b> T72</div><div><b>♣</b> AT65</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> 7</div><div><b>♥</b> T653</div><div><b>♦</b> AK983</div><div><b>♣</b> Q72</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-24">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 24</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> AT75</div><div><b>♥</b> KQ5</div><div><b>♦</b> Q85</div><div><b>♣</b> Q74</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 3</div><div><b>♥</b> T98632</div><div><b>♦</b> A63</div><div><b>♣</b> J32</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QJ9862</div><div><b>♥</b> A74</div><div><b>♦</b> 2</div><div><b>♣</b> 965</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> K4</div><div><b>♥</b> J</div><div><b>♦</b> KJT974</div><div><b>♣</b> AKT8</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-25">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 25</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: מזרח–מערב
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> —</div><div><b>♥</b> JT95</div><div><b>♦</b> K2</div><div><b>♣</b> AQJT762</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 763</div><div><b>♥</b> AK64</div><div><b>♦</b> Q754</div><div><b>♣</b> 93</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> KQJ98</div><div><b>♥</b> Q873</div><div><b>♦</b> 986</div><div><b>♣</b> 5</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> AT542</div><div><b>♥</b> 2</div><div><b>♦</b> AJT3</div><div><b>♣</b> K84</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-26">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 26</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> K</div><div><b>♥</b> AT96</div><div><b>♦</b> Q9842</div><div><b>♣</b> AJT</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 986</div><div><b>♥</b> Q2</div><div><b>♦</b> KJT3</div><div><b>♣</b> Q842</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> QJ75432</div><div><b>♥</b> J753</div><div><b>♦</b> —</div><div><b>♣</b> 63</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> AT</div><div><b>♥</b> K84</div><div><b>♦</b> A765</div><div><b>♣</b> K975</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-27">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 27</h1>
+                  <p class="meta">
+                    מחלק: דרום
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> QJ74</div><div><b>♥</b> 932</div><div><b>♦</b> T4</div><div><b>♣</b> 9864</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> AK3</div><div><b>♥</b> 6</div><div><b>♦</b> J986</div><div><b>♣</b> QJ532</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> T98</div><div><b>♥</b> AK854</div><div><b>♦</b> A5</div><div><b>♣</b> AT7</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> 652</div><div><b>♥</b> QJT7</div><div><b>♦</b> KQ732</div><div><b>♣</b> K</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-28">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 28</h1>
+                  <p class="meta">
+                    מחלק: מערב
+                    &nbsp; | &nbsp;
+                    פגיעות: צפון–דרום
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> 874</div><div><b>♥</b> T2</div><div><b>♦</b> Q9862</div><div><b>♣</b> 973</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> K9</div><div><b>♥</b> Q543</div><div><b>♦</b> J3</div><div><b>♣</b> QT652</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AT32</div><div><b>♥</b> AKJ7</div><div><b>♦</b> 7</div><div><b>♣</b> AJ84</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> QJ65</div><div><b>♥</b> 986</div><div><b>♦</b> AKT54</div><div><b>♣</b> K</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-29">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 29</h1>
+                  <p class="meta">
+                    מחלק: צפון
+                    &nbsp; | &nbsp;
+                    פגיעות: כולם
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> KJ43</div><div><b>♥</b> J</div><div><b>♦</b> T962</div><div><b>♣</b> K542</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> 5</div><div><b>♥</b> A632</div><div><b>♦</b> AK854</div><div><b>♣</b> AJT</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> A9</div><div><b>♥</b> QT9754</div><div><b>♦</b> QJ73</div><div><b>♣</b> 3</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> QT8762</div><div><b>♥</b> K8</div><div><b>♦</b> —</div><div><b>♣</b> Q9876</div></div>
+                  </div>
+                </div>
+                
+                <div class="page" id="board-30">
+                  <button onclick="showPage('ranking')">חזרה לדירוג</button>
+                  <h1>בורד 30</h1>
+                  <p class="meta">
+                    מחלק: מזרח
+                    &nbsp; | &nbsp;
+                    פגיעות: אין
+                  </p>
+                  <div class="hands">
+                    <div class="north"><h3>צפון</h3><div><b>♠</b> K752</div><div><b>♥</b> AJ93</div><div><b>♦</b> A</div><div><b>♣</b> A753</div></div>
+                    <div class="west"><h3>מערב</h3><div><b>♠</b> Q8</div><div><b>♥</b> KT74</div><div><b>♦</b> JT65</div><div><b>♣</b> 642</div></div>
+                    <div class="east"><h3>מזרח</h3><div><b>♠</b> AT94</div><div><b>♥</b> Q2</div><div><b>♦</b> Q32</div><div><b>♣</b> KJ98</div></div>
+                    <div class="south"><h3>דרום</h3><div><b>♠</b> J63</div><div><b>♥</b> 865</div><div><b>♦</b> K9874</div><div><b>♣</b> QT</div></div>
+                  </div>
+                </div>
+                
+</body>
+</html>
