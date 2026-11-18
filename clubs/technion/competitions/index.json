@@ -206,5 +206,21 @@
     "display_date": "11/11/2026",
     "folder": "2026-11-11-BM-2026-29203fd4",
     "source": "BridgeMaster"
+  },
+  {
+    "id": "BM-2026-3e8fbd70",
+    "title": "בוקר ברידג'",
+    "date": "2026-11-17",
+    "display_date": "17/11/2026",
+    "folder": "2026-11-17-BM-2026-3e8fbd70",
+    "source": "BridgeMaster"
+  },
+  {
+    "id": "BM-2026-d970a457",
+    "title": "בוקר ברידג'",
+    "date": "2026-11-18",
+    "display_date": "18/11/2026",
+    "folder": "2026-11-18-BM-2026-d970a457",
+    "source": "BridgeMaster"
   }
 ]
